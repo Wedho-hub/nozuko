@@ -1,0 +1,546 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    list-style: none; text-decoration: none;
+}
+
+body {
+    margin: 0; height: 100%;
+    width: 105%;
+}
+
+.underline{
+  height: 3px; width: 100%;
+  background-color: rgba(0, 150, 136, 1);
+}
+
+section{
+    width: 95%; height: auto; padding: 1rem;
+    height: 100vh;
+}
+
+.section-topic{
+  font-family: "Merriweather", serif; text-align: center;
+  font-style: italic; text-transform: capitalize;
+  padding: 2rem 0 3rem; font-weight: 900;
+  font-size: 2rem;
+}
+
+/* header specific styles */
+header{
+    display: flex; justify-content: space-around;
+    align-items: center; width: 100%; height: auto;
+    padding: .5rem; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed; z-index: 999;
+    background: rgb(255, 254, 254);
+    top: 0; right: 0; left: 0; 
+}
+
+.logo h1{
+    font-family: "Butterfly Kids", cursive;
+    color: rgb(73, 109, 176); font-weight: 900;
+}
+
+.logo p{
+    color: rgb(190, 17, 109);
+}
+
+nav{
+    display: flex; align-items: center;
+}
+
+.menu{
+    display: flex; gap: 2rem;
+    text-transform: capitalize;
+}
+
+.menu-link {
+  color: #000;
+  font-family: "Merriweather", serif;
+  font-size: small;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-link:hover {
+  font-weight: 500;
+  color: rgba(0, 150, 136, 1);
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+/* home page specific styles */
+#home{
+    background: linear-gradient(90deg, rgb(150, 150, 150) 4%, rgba(234, 235, 235, 1) 37%, rgba(255, 255, 255, .1) 57%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .content {
+    flex: 1; margin-left: 2rem;
+    padding: 20px;
+  }
+  
+  .img-container {
+    flex: 1;
+    height: 98vh;
+    overflow: hidden;
+  }
+  
+  .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #welcome-start{
+    font-family: "Merriweather", serif;
+    font-size: 1.8rem; text-transform: capitalize;
+  }
+  
+  #welcome-start,
+  #welcome-end {
+    margin-bottom: 2rem;
+  }
+  
+  button {
+    background: rgba(0, 150, 136, 1);
+    color: #fff; margin-top: 2rem;
+    padding: 10px 20px; font-size: large;
+    border: none; border-radius: 1rem;
+    cursor: pointer; transition: all .4s ease-in;
+  }
+
+  button:hover{
+    box-shadow: inset 0 -7px 9px rgba(0, 0, 0, 0.2) !important;
+    color: black; transform: scale(1.2); background: coral;
+    font-weight: 500;
+  }
+  
+  .social-icons {
+    margin-top: 4rem; display: flex; gap: 1rem;
+    justify-content: start; align-items: start;
+    padding-left: .5rem;
+  }
+  
+  .social-links {
+    margin-right: 10px; font-size: x-large;
+    color: rgb(0, 0, 0); transition: all .4s ease-in-out;
+  }
+
+  .social-links:hover{
+    color: rgba(0, 150, 136, 1); transform: scale(1.3);
+  }
+
+  /* features specific styles */
+  .features{
+    display: flex; flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .feature-card{
+    width: calc((100% / 3) - 1rem); text-align: start;
+    padding: 1.5rem; display: flex; flex-direction: column;
+    justify-content: space-between; gap: 1rem; color: whitesmoke;
+  }
+
+  .feature-card i{
+    font-size: x-large;
+  }
+
+  .first{
+    background: blueviolet;
+  }
+
+  .second{
+    background: green;
+  }
+
+  .third{
+    background: coral;
+  }
+
+  /* about specific styles */
+  #about{
+     padding: 2rem;
+
+  }
+
+  #about .section-topic{
+    align-self: center;
+  }
+
+  .about-content{
+    display: grid; height: 70%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  #about-img{
+    width: 100%; height: auto; padding: 1rem 1rem 0 1rem;
+    text-align: center; border-radius: 2rem;
+    grid-column: 1 / 2; grid-row: 1 / 3;
+  }
+
+  .vision{
+    text-align: left;
+    grid-column: 2 / 3; grid-row: 1 / 3;
+    display: flex; flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start; flex-wrap: wrap;
+  }
+
+  /* programs specific styles */
+  #programs{
+    display: flex; flex-direction: column;
+    justify-content: space-evenly; align-items: center;
+    background: rgba(206, 212, 213, 1);
+    overflow: hidden; white-space: wrap;
+    padding: 4rem; height: 100%;
+  }
+
+  .classes-content{
+    display: grid; gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .box{
+    padding: 1.5rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; text-align: center;
+    border-radius: 8px; line-height: 1.3;
+    transition: all .3s ease-in-out;
+    display: flex; justify-content: space-between;
+    align-items: center; gap: 1rem;
+  }
+
+  .box:hover,
+  .box:active{
+    transform: scale(1.1);
+  }
+
+  article .text{
+    background: rgba(5, 5, 5, 0.3); color: whitesmoke;
+    display: flex; justify-content: space-between;
+    align-items: center; flex-direction: column;
+  }
+
+  .infant{
+    grid-column: 1 / 2; grid-row: 1 / 2;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #9C27B0, #673AB7);
+    box-shadow: 8px 8px 16px rgba(103, 58, 183, 0.2);
+    color: #ffffff;
+  }
+
+  .pre-kinder{
+    grid-column: 2 / 3; grid-row: 1 / 2;
+    background: linear-gradient(45deg, #2897f3, #03A9F4);
+    box-shadow: 8px 8px 16px rgba(33, 150, 243, 0.2);
+    color: #ffffff;
+  }
+
+  .social{
+    grid-column: 3 / 4; grid-row: 1 / 2;
+    background: linear-gradient(45deg, #4CAF50, #8BC34A);
+    box-shadow: 8px 8px 16px rgba(76, 175, 80, 0.2);
+    color: #ffffff;
+  }
+
+  .physical{
+    grid-column: 1 / 2; grid-row: 2 / 3;
+    background: linear-gradient(45deg, #FF9800, #FFC107);
+    box-shadow: 8px 8px 16px rgba(255, 193, 7, 0.2);
+    color: #ffffff;
+  }
+
+  .enrich{
+    grid-column: 2 / 3; grid-row: 2 / 3;
+    background: linear-gradient(45deg, #F44336, #E91E63);
+    box-shadow: 8px 8px 16px rgba(244, 67, 54, 0.2);
+    color: #ffffff;
+  }
+
+  .trips{
+    grid-column: 3 / 4; grid-row: 2 / 3;
+    background: linear-gradient(45deg, #009688, #00BCD4);
+    box-shadow: 8px 8px 16px rgba(0, 150, 136, 0.2);
+    color: #ffffff;
+  }
+
+  /* contact section specific styles */
+  #contact{
+    padding: 2rem; height: 100%;
+  }
+
+  .contact-content{
+    display: flex; justify-content: space-around;
+    font-size: 1.2rem; line-height: 1;
+  }
+
+  .contact-content img{
+    flex: 1; overflow: hidden;
+    border-radius: 8px;
+    height: 95vh;
+  }
+
+  form {
+    margin: .5rem; flex: 1;
+  }
+  
+  label {
+    display: inline-block;
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    width: 90%;
+    padding: 0.8rem;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color: rgba(0, 150, 136, 1);
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+
+/* Footer specific styles */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  background-color: #333;
+  color: #fff; padding: 0;
+}
+
+.brand {
+  grid-column: 1 / 2;
+  padding: 2rem;
+}
+
+#contact-info {
+  grid-column: 2 / 3;
+  padding: 2rem; display: flex;
+  justify-content: center; align-items: baseline;
+  flex-direction: column; margin-right: 2rem;
+}
+
+#contact-info .social-links i:hover{
+  color: coral;
+}
+
+.sign-off {
+  grid-column: 1 / -1;
+  background-color: #665555;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  /* header specific style */
+  .menu {
+    display: block; position: absolute;
+    top: 12vh; right: 5%; left: 8%; width: 80%;
+    height: auto; background: #009688;
+    border-radius: 10px; box-shadow: none;
+    padding: .5rem; opacity: 0; 
+  }
+
+  .show-menu{
+    opacity: 1;
+  }
+
+  .menu-item{
+    padding: .5rem; text-align: center;
+    transition: all .3s ease-in-out;
+    width: 10rem; border-radius: 2rem;
+    margin: auto;
+  }
+
+  .menu-item:hover{
+    background: coral; color: #000;
+    font-weight: 900;
+  }
+
+  .menu-link{
+    font-size: 1rem; color: whitesmoke;
+    font-weight: 600; font-size: large;
+  }
+
+  #menuToggle{
+    padding: auto; display: block;
+    transition: all .3s ease-in-out;
+  }
+
+  .bar{
+    width: 2.2rem; background: black;
+    height: .3rem; display: block;
+    margin: .4rem; border-radius: 5px;
+  }
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(9px, 7px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(9px, -7px);
+}
+
+/* home page specific styles */
+#home {
+  background: url('https://thumbs.dreamstime.com/b/little-girl-eating-chocolate-easter-egg-23921960.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.logo h1{
+  font-size: 1.7rem;
+}
+
+.logo p{
+  font-size: .8rem;
+}
+
+.container {
+  display: flex; justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: auto; position: relative; top: 20vh;
+  text-align: center; background: rgba(169, 169, 169, 0.7);
+  border-radius: 10px;
+}
+
+.img-container{
+  display: none;
+}
+
+#welcome-end{
+  font-size: larger; font-weight: 600;
+}
+
+.social-icons{
+  display: block; margin: 4rem auto 0;
+}
+
+/* features */
+.features{
+  display: block;
+}
+
+.feature-card{
+  width: 100%; padding: 2rem;
+  text-align: center; overflow: hidden;
+  transition: all .3s ease-in-out;
+}
+
+/* about specific styles */
+#about{
+  height: auto;
+}
+.about-content{
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  margin: auto;
+}
+
+.about-content .img{
+  height: 100%;
+  width: auto;
+}
+
+.vision h3{
+  padding-top: 1rem;
+}
+
+.vision p{
+  padding-bottom: .5rem;
+}
+
+/* programs specific */
+.classes-content{
+  display: grid; gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 2rem 0; margin: 0
+}
+
+.infant{
+  grid-column: 1 / 2; grid-row: 1 / 2;
+}
+
+.pre-kinder{
+  grid-column: 2 / 3; grid-row: 1 / 2;
+}
+
+.social{
+  grid-column: 1 / 2; grid-row: 2 / 3;
+}
+
+.physical{
+  grid-column: 2 / 3; grid-row: 2 / 3;
+}
+
+.enrich{
+  grid-column: 1 / 2; grid-row: 3 / 4;
+}
+
+.trips{
+  grid-column: 2 / 3; grid-row: 3 / 4;
+}
+
+/* contact specific */
+#contact{
+  background: url('https://thumbs.dreamstime.com/b/cute-afro-boy-talking-phone-sitting-floor-cute-afro-boy-talking-phone-sitting-floor-living-room-129189219.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: whitesmoke;
+}
+
+.contact-content{
+  display: flex; justify-content: space-around;
+  font-size: 1.2rem; line-height: 1;
+  background: rgba(250, 250, 250, 0.5);
+}
+
+.contact-content img{
+  display: none;
+}
+
+}
+
+/* mobile screens */
+@media screen and (max-width: 500px) {
+  .classes-content{
+    display: flex; flex-direction: column;
+  }
+
+  footer{
+    display: flex; flex-direction: column;
+  }
+}
