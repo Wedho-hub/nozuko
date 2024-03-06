@@ -16,3 +16,19 @@ menuToggle.addEventListener('click', function() {
     // Toggle menu visibility
     menu.classList.toggle('show-menu');
 });
+
+const whatsappButton = document.querySelector("#register");
+
+whatsappButton.addEventListener("click", () => {
+  const phoneNumber = '2786109599';
+  
+  const whatsappUrl = `https://wa.me/${phoneNumber}`;
+  
+  window.open(whatsappUrl, '_blank');
+});
+
+const showModal = () => {
+    // Show the modal
+    const myModal = new bootstrap.Modal(document.getElementById('developmentModal'));
+    myModal.show();
+  };
